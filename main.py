@@ -39,7 +39,7 @@ def UpdateStudent(student_id: int, UpdatedStudent: Student):
 
 
 @app.delete("/students/{student_id}")
-def delete_student(student_id: int):
+def DeleteStudent(student_id: int):
     for student in students:
         if student["id"] == student_id:
             students.remove(student)
